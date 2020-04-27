@@ -1,0 +1,119 @@
+@import url("./section.css");
+@import url("./header.css");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+:root {
+	--jaune: #feca07
+}
+
+body {
+	margin: 0;
+	/*     font-family: Verdana, Geneva, Tahoma, sans-serif; */
+	background-color: white;
+	font-family: 'Manrope', sans-serif;
+}
+
+mark {
+	background-color: black;
+	color: var(--jaune);
+}
+
+p {
+	text-align: center
+}
+
+p.blocktext {
+	margin-left: auto;
+	margin-right: auto;
+	width: 6em
+}
+
+.fa-graduation-cap,
+.fa-briefcase,
+.fa-pencil-alt {
+	color: var(--jaune);
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+.fa-futbol,
+.fa-laptop,
+.fa-dumbbell {
+	font-size: 2em;
+	margin: 10px;
+}
+
+h1 {
+	text-align: center;
+	/* margin: 0; */
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+h1 span {
+	color: var(--jaune);
+}
+
+h2 {
+	text-align: left;
+	margin-bottom: 2px;
+	border-bottom: 2px solid var(--jaune);
+	font-size: 1.2em;
+}
+
+h3 {
+	text-align: left;
+	margin: 0px;
+}
+
+article {
+	text-align: left;
+	max-width: 450px;
+	/* border: 1px solid red; */
+}
+
+aside {
+	background-color: var(--jaune);
+}
+
+aside article {
+	padding: .5rem !important;
+}
+
+aside h2 {
+	background-color: black;
+	color: var(--jaune);
+	text-align: center;
+}
+
+aside section:last-of-type article {
+	display: flex;
+	justify-content: space-around;
+}
+
+@media screen and (min-width: 768px) {
+	aside {
+		width: 20vw;
+		padding: 0;
+		margin-top: 0px;
+	}
+	main {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+	main>div {
+		width: 76vw;
+	}
+	main div section:nth-of-type(3) ul {
+		display: flex;
+	}
+	main div section:nth-of-type(3) ul li {
+		display: block;
+	}
+	main div section:nth-of-type(3) ul li:before {
+		content: "";
+	}
+	main div section:nth-of-type(3) ul li * {
+		width: 100%
+	}
+}
